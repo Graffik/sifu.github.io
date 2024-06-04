@@ -1,0 +1,264 @@
+/* DROP MENUS START HERE */
+
+#prods {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin: 0px;
+    display: none;
+    }
+        
+    #svr {
+    max-width: 100%;
+    padding: 0 0 0 30px;
+    text-align: left;
+    margin: 0px;
+    display: none;
+    }
+    
+    #comp {
+    max-width: 100%;
+    padding: 0;
+    text-align: left;
+    margin: 0px;
+    display: none;
+    }
+        
+    #dropbut {
+    color: black;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 16pt;
+    line-height: 16pt;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 15px 0 15px 0;
+    margin: 0;
+    background: none!important;
+    }
+        
+    .sub a {
+    width: 100%;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    line-height: 16pt;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 15px 0 15px 0;
+    margin: 0;
+    cursor: default;
+    }
+    
+    /* DROP MENUS END HERE */
+    
+    /* FADE IN LEFT HAMBURGER SLIDE STARTS HERE */
+    .burger {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+    
+    @-webkit-keyframes fadeInLeft {
+    0% { opacity: 0;
+    -webkit-transform: translateX(50px); }
+    100% { opacity: 1;
+    -webkit-transform: translateX(0); }
+    }
+    @keyframes fadeInLeft {
+    0% { opacity: 0;
+    transform: translateX(50px); }
+    100% { opacity: 1;
+    transform: translateX(0); }
+    }
+    .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft; }
+    /* FADE IN LEFT HAMBURGER SLIDE ENDS HERE */
+    
+    input { display: none; }
+    
+    /* HAMBURGER LINES START */
+    .open {
+      background-color: #000000;
+      width: 24px;
+      height: 4px;
+      display: block;
+      border-radius: 2px;
+    cursor: default;
+      position: relative;
+      top: 8px;
+    }
+    
+    .open:before {
+      content: "";
+      background-color: #000000;
+      width: 24px;
+      height: 4px;
+      display: block;
+      border-radius: 2px;
+      position: relative;
+      top: -8px;
+      transform: rotate(0deg);
+      transition: all 0.3s ease;
+    }
+    
+    .open:after {
+      content: "";
+      background-color: #000000;
+      width: 24px;
+      height: 4px;
+      display: block;
+      border-radius: 2px;
+      position: relative;
+      top: 4px;
+      transform: rotate(0deg);
+      transition: all 0.3s ease;
+    }
+    /* HAMBURGER LINES END */
+    
+    .menuOpen {
+    width: 24px;
+    height: 20px;
+    display: block;
+    padding: 25px;
+    cursor: default;
+    float: right;
+    margin-top: 29px;
+    /* SECTION BELOW PREVENTS FLASH-HIGHLIGHTS ON TAPPED ITEMS */
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        outline: none !important;
+    /* SECTION ABOVE PREVENTS FLASH-HIGHLIGHTS ON TAPPED ITEMS */
+    }
+    
+    .menuOpen:hover .open:before { top: -9px; }
+    .menuOpen:hover .open:after { top: 5px; }
+    
+    .menu {
+    position: fixed;
+    overflow-y: scroll;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 1);
+    }
+    
+    .menu label {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-size: 100%;
+    cursor: default;
+    }
+    
+    .menu .menuContent {
+    position: relative;
+    top: 30%;
+    width: 80%;
+    font-size: 16pt;
+    line-height: 16pt;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 0px 0px 20px 0px;
+    margin: -100px auto 0px auto;
+    }
+    
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+    }
+    
+    .menu ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0 15px 0;
+    cursor: default;
+    /* SECTION BELOW PREVENTS FLASH-HIGHLIGHTS ON TAPPED ITEMS */
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        outline: none !important;
+    /* SECTION ABOVE PREVENTS FLASH-HIGHLIGHTS ON TAPPED ITEMS */
+    }
+    
+    .menuEffects {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0.5s;
+    }
+    
+    .menuEffects ul {
+      transform: translateY(0%);
+      transition: all 0.5s;
+    }
+    
+    #menuToggle:checked ~ .menuEffects {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s;
+    }
+    
+    #menuToggle:checked ~ .menuEffects ul { opacity: 1; }
+    #menuToggle:checked ~ .menuOpen .open { background-color: transparent; }
+    
+    #menuToggle:checked ~ .menuOpen .open:before {
+      content: "";
+      background-color: black;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 100;
+    }
+    
+    #menuToggle:checked ~ .menuOpen .open:after {
+      content: "";
+      background-color: black;
+      transform: rotate(-45deg);
+      position: relative;
+      top: 0;
+      right: 0;
+      z-index: 100;
+    }
+    
+    #menuToggle:not(:checked) ~ .menuEffects ul { transform: translateY(-30%); }
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 480 PIXELS */
+    @media (max-width: 480px) {
+    /* WEBKIT AND MS Prevents Mobile Safari from bumping up font sizes in landscape */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    
+    } /* END OF 480 MEDIA CALL */
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 380 PIXELS */
+    @media (max-width: 380px) {
+    
+    .menuOpen { padding: 25px 20px; }
+    
+    } /* END OF 380 MEDIA CALL */

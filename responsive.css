@@ -1,0 +1,270 @@
+/* SCREEN VIEWS AT 1530 PIXELS */
+@media (max-width: 1530px) {
+	
+    .prcolumns { width: 70%; display: block; }
+    
+    .techBlock { margin: 0px 2%; }
+    .newsBlock { margin: 0px 1%; }
+    
+    } /* END OF 1530 MEDIA CALL */
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 1250 PIXELS */
+    @media (max-width: 1250px) {
+        
+    .feattext {
+    width: 100%;
+    padding-bottom: 20px;
+    display: block;
+    }
+    
+    .featvid {
+    width: 100%;
+    display: block;
+    }
+    
+    .hometrips { margin: 0px auto 60px auto; }
+    
+    .overview {
+    width: 50%;
+    margin-bottom: 60px;
+    }
+        
+    .prtext h2 { font-size: 13pt; line-height: 23pt; }
+    
+    .techBlock { margin: 0px 10%; }
+    .newsBlock { margin: 0px 5%; }
+        
+    .integrate {
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    display: block;
+    background: #ffff00;
+    }
+    
+    } /* END OF 1250 MEDIA CALL */
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 1120 PIXELS */
+    @media (max-width: 1120px) {
+        
+    .techBlock { margin: 0px 6%; }
+        
+    .appstudypic75 { width: 100%; }
+    .appstudypic50 { width: 100%; }
+        
+    .careercolumns { display: block; }
+    .careercolumns div { display: block; }
+    .careerpics { max-width: 480px; margin: 80px auto 0px auto; }
+    .careertext { vertical-align: top; padding: 0px; }
+        
+    .prcolumns div { display: block; }
+    .prpics { width: 100%; margin: 30px auto 0px auto; }
+    .prtext { vertical-align: top; padding: 0px; }
+    .prtext h2 { text-align: center; font-size: 15pt; line-height: 25pt; }
+    
+    } /* END OF 1120 MEDIA CALL */
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 950 PIXELS */
+    @media (max-width: 950px) {
+    
+    .footmast { margin: 40px auto 0px auto; }
+    .footlogobox { display: block; margin: 40px 0px 0px 0px; }
+    .footsocial { display: block; float: left; margin: 45px 0px 0px 0px; }
+    
+    } /* END OF 1120 MEDIA CALL */
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 875 PIXELS - HAMBURGER APPEARS */
+    @media (max-width: 875px) {
+        
+    .subslide { margin: 26px auto 40px auto; }
+    
+    #menuArea { width: 90%; display: block; position: relative; z-index: 1000; }
+    .topnav { display: none; }
+    .logobox { padding-left: 0; }
+    .top { padding: 0px 0px 55px 0px; }
+    .subtext { padding: 0px; }
+        
+    .hstop { padding-top: 20px; }
+        
+    .statesleft {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    }
+    .statescenter {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    }
+    .statesright {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    }
+        
+    .homeleft {
+    width: 100%;
+    display: block;
+    }
+    .homecenter {
+    width: 100%;
+    margin: 60px 0 80px 0;
+    display: block;
+    }
+    .homeright {
+    width: 100%;
+    display: block;
+    }
+        
+    .ivrleft {
+    width: 100%;
+    display: block;
+    }
+        
+    .ivrcenter {
+    width: 100%;
+    margin: 60px 0 60px 0;
+    display: block;
+    }
+        
+    .productsleft {
+    width: 100%;
+    display: block;
+    }
+    .productscenter {
+    width: 100%;
+    display: block;
+    margin: 60px 0 0 0;
+    }
+    .productsright {
+    width: 100%;
+    display: block;
+    margin: 60px 0 60px 0;
+    }
+        
+    .chpmiddle {
+    width: 100%;
+    margin-bottom: 60px;
+    display: block;
+    }
+    
+    .chpbottom {
+    width: 100%;
+    padding-left: 0;
+    display: block;
+    }
+        
+    .techtrips { margin: 60px auto 20px auto; }
+        
+    .techcolumn {
+    width: 100%;
+    padding-bottom: 40px;
+    display: block;
+    }
+    
+    .techone {
+    width: 33.33%;
+    padding: 0px 0px 10px 0px;
+    }
+    .techtwo {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    display: block;
+    text-align: center;
+    }	
+    
+    .columns { display: block; }
+    .columns div { display: block; }
+    .teampic { margin: 0px auto 30px auto; }
+    .teamtext { padding: 0px; }
+        
+    .techBlock { margin: 0px 2%; }
+        
+    .contblock { display: block; }
+    .contblock div { display: block; }
+    .contleft { margin: 0px 0px 30px 0px; }
+    .contright { padding: 0px; }
+        
+    .squares {
+    display: block;
+    margin-top: 5px;
+    }
+    .gsquare {
+    margin: 0 5px 0 0;
+    }
+    .asquare {
+    margin: 0 5px 0 0;
+    }
+    .osquare {
+    margin: 0 5px 0 0;
+    }
+        
+    .techmiddle img {
+    width: 100%;
+    margin: 0;
+    }
+        
+    .solutions {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    }
+    
+    } /* END OF 875 MEDIA CALL */
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 740 PIXELS */
+    @media (max-width: 740px) {
+    
+    } /* END OF 740 MEDIA CALL */
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 600 PIXELS */
+    @media (max-width: 600px) {
+        
+    .overview {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+    }
+    
+    .careerpics { width: 100%; }
+    .careerpica { width: 100%; float: none; }
+    .careerpicb { width: 100%; float: none; margin: 30px 0px 30px 0px; }
+    .careerpicc { width: 100%; float: none; margin: 0px;  }
+    
+    } /* END OF 600 MEDIA CALL */
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 480 PIXELS */
+    @media (max-width: 480px) {
+        
+    .productscenter img {
+    width: 100%;
+    }
+        
+    /* Global adjustments */
+    html {
+        -webkit-text-size-adjust: 100%; /* Prevents Mobile Safari from bumping up font sizes in landscape */
+        -ms-text-size-adjust: 100%;     /* Prevents Windows devices from bumping up font sizes */
+    }
+    } /* END OF 480 MEDIA CALL */
+    
+    /* ---------------------------------------------------- */
+    
+    /* SCREEN VIEWS AT 380 PIXELS */
+    @media (max-width: 380px) {
+        
+    #menuArea { width: 89%; }
+    
+    } /* END OF 380 MEDIA CALL */

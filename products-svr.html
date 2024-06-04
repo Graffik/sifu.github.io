@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="description" content="">
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+<link rel="stylesheet" type="text/css" href="endura.css" />
+<link rel="stylesheet" type="text/css" href="responsive.css" />
+<link rel="shortcut icon" href="endura-icon.png" type="image/x-icon">
+
+</head>
+<body>
+
+<div><link rel="stylesheet" href="mobilenav.css">
+
+<div id="menuArea" class="burger fadeInLeft">
+
+<input type="checkbox" id="menuToggle"></input>
+
+<label for="menuToggle" class="menuOpen">
+<div class="open"></div>
+</label>
+
+<div class="menu menuEffects">
+<label for="menuToggle"></label>
+
+<div class="menuContent">
+<ul>
+<li><a href="/technology">Technology</a></li>
+	
+<li><button id="dropbut" onclick="prods()">Products +</button></li>
+<div id="prods">
+<div class="sub"><a href="/products-svr">&#8627; sVR</a></div>	
+<div class="sub"><a href="/products-evr">&#8627; eVR</a></div>
+<div class="sub"><a href="/products-ivr">&#8627; iVR</a></div>
+</div>
+
+<li><a href="/integration">Integration</a></li>
+<li><a href="/solutions">Solutions</a></li>
+
+<li><button id="dropbut" onclick="comp()">Company +</button></li>
+<div id="comp">
+<div class="sub"><a href="/leadership">&#8627; Leadership</a></div>
+<div class="sub"><a href="/news">&#8627; News & Info</a></div>
+<div class="sub"><a href="/careers">&#8627; Careers</a></div>
+<div class="sub"><a href="/contact-us">&#8627; Contact</a></div>
+</div>
+	
+<li><a href="/">Home</a></li>
+</ul>
+</div>
+
+</div> <!-- end of menuEffects -->
+</div> <!-- end of menuArea -->
+
+<script>
+function prods() {
+  var x = document.getElementById("prods");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function svr() {
+  var x = document.getElementById("svr");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function comp() {
+  var x = document.getElementById("comp");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script></div>
+
+<!-- TOP BLOCK STARTS HERE -->
+<div class="topwhitebkgrd fadeInDown">
+<div class="top">
+	
+<div class="mast"> <!-- mast starts here -->
+<script>
+// START AUTO COPYRIGHT INFO - doesn't work within footer - needs to be near top of page
+function updateCopyright(companyName) {
+currentDate = new Date();
+copyrightYear = currentDate.getFullYear();
+document.write("&#169; " + copyrightYear + " " + companyName + ".")
+}
+// END AUTO COPYRIGHT INFO
+</script>
+
+<div class="logobox">
+<a href="/"><img class="logo" src="images/endura-logo.png" alt="Endura Technologies" /></a>
+</div> <!-- logobox -->
+
+<div class="topnav">
+<div id="navigation">
+
+<div id="container">
+<ul>
+<li class="btn-holder"><a href="/technology"><button class="btn hover-border"><span>Technology</span></button></a></li>
+
+<li class="dropdown"><a href="#"><button class="btn hover-border"><span>Products</span></button></a>
+
+<div class="dropdown-content">
+<a href="/products-svr">sVR</a>
+<a href="/products-evr">eVR</a>
+<a href="/products-ivr">iVR</a>
+</div>
+
+</li>
+
+<li class="btn-holder"><a href="/integration"><button class="btn hover-border"><span>Integration</span></button></a></li>
+<li class="btn-holder"><a href="/solutions"><button class="btn hover-border"><span>Solutions</span></button></a></li>
+<li class="dropdown"><a href="#"><button class="btn hover-border"><span>Company</span></button></a>
+
+<div class="dropdown-company">
+<a href="/leadership">Leadership</a>
+<a href="/news">News & Info</a>
+<a href="/careers">Careers</a>
+<a href="/contact-us">Contact</a>
+</div>
+
+</li>
+</ul>
+</div>
+
+</div> <!-- end navigation -->
+</div> <!-- end topnav --></div> <!-- mast ends here -->
+	
+<div class="subcolumn fade-in-div">
+<h1>Standalone VR (sVR)</h1>
+<h2>Proven track record of delivering advanced products</h2>
+</div>
+
+</div> <!-- end top -->
+</div> <!-- end topwhitebkgrd -->
+<!-- TOP BLOCK ENDS HERE -->
+
+<div class="fade-in-div" style="margin: 10px 0 50px 0;"><hr></div>
+
+<div class="hometrips fade-in-div">
+<!-- inline block elements cannot have space between div tags else html will display space and 50% width will not work -->
+<div class="overview"><a href="/products-svr-chp2882"><img src="images/chp-2882.jpg" alt="Endura CHP-2882" /></a></div><div class="overview"><b>CHP2882: Charge Pump</b><br>14V, 6A/24W, Divide by 1-4, ES<div class="learnmore"><a href="/products-svr-chp2882">Learn More</a></div></div><div class="overview"><a href="/products-svr-chp2775"><img src="images/chp-2775.jpg" alt="Endura CHP-2775" /></a></div><div class="overview"><b>CHP2775: DDR5 PMIC</b><br>10MHz, 5.5>1.0V, 14A, 3 Bucks, 2 LDO, ES<div class="learnmore"><a href="/products-svr-chp2775">Learn More</a></div></div>
+</div>
+
+<div class="hometrips fade-in-div">
+<!-- inline block elements cannot have space between div tags else html will display space and 50% width will not work -->
+<div class="overview"><a href="/products-svr-chp2630"><img src="images/chp-2630.jpg" alt="Endura CHP-2630" /></a></div><div class="overview"><b>CHP2630/2635: 5G PMIC</b><br>10MHz; 5.5>0.7V, 10A, 2 Bucks, ES<div class="learnmore"><a href="/products-svr-chp2630">Learn More</a></div></div><div class="overview"><a href="/products-svr-chp2780"><img src="images/chp-2780.jpg" alt="Endura CHP-2780" /></a></div><div class="overview"><b>CHP2780: Custom PMIC</b><br>10 MHz, 5.5>0.7V, 18A, 5 Bucks, 7 LDOs, ES<div class="learnmore"><a href="/products-svr-chp2780">Learn More</a></div></div>
+</div>
+
+<div class="footslide show-on-scroll"><hr></div>
+
+<div class="footslide show-on-scroll">
+
+<div class="footmast">
+
+<div class="footlogobox">
+<a href="/"><img class="logo" src="images/endura-logo.png" alt="Endura Technologies Logo" /></a>
+</div> <!-- end logobox -->
+	
+<div class="footsocial"><span class="fineprint">San Diego, CA | Dublin, Ireland | <script type="text/javascript" language="JavaScript">updateCopyright('Endura Technologies');</script> | All rights reserved. Endura Technologies eVR<sup>&trade;</sup> is a trademark of Endura Technologies. | <a href="/privacy-page" class="hover-underline-animation">Privacy Page</a></span></div> <!-- end footsocial -->
+
+</div> <!-- mast ends here -->
+
+</div> <!-- end footslide -->
+
+<script>
+// START MOBILE NAV SCROLL DISABLE
+// Number of clicks on the trigger element initially set on 0
+let numOfClicks = 0;
+// Get trigger element 
+const trigger = document.getElementById("menuToggle");
+// Get body element
+const bodyEl = document.getElementsByTagName("body")[0];
+
+// Set onclick function to trigger element
+trigger.onclick = () => {
+    numOfClicks += 1;
+    // Check if number of clicks is an even value: 
+    // odd value - first click, even value - second click
+    const isNumOfClicksEven = numOfClicks % 2 === 0;
+    // On first click set body's overflow property to "auto", 
+    // On second click set body's overflow property to "hidden"
+    isNumOfClicksEven ? bodyEl.style.overflow = "auto" : bodyEl.style.overflow = "hidden";
+};
+// END MOBILE NAV SCROLL DISABLE
+</script>
+
+<script src="endura.js"></script>
+
+</body>
+</html>

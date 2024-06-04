@@ -1,0 +1,72 @@
+/* IF SLIDE ADDITION OR REMOVAL IS NEEDED DO IT HERE - https://codepen.io/ibanez182/pen/LZPgrY */
+/* AFTER SLIDE ADJUSTMENTS COMPILE SCSS TO CSS HERE - https://www.cssportal.com/scss-to-css */
+.slideshow {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    }
+    .slideshow-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: no-repeat 50% 50%;
+      background-size: cover;
+      animation-name: kenburns;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    .slideshow-image:nth-child(1) {
+      animation-name: kenburns-1;
+      z-index: 1;
+    }
+    .slideshow-image:nth-child(2) {
+      animation-name: kenburns-2;
+      z-index: 0;
+    }
+    @keyframes kenburns-1 {
+      0% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+      1.5625% {
+        opacity: 1;
+      }
+      48.4375% {
+        opacity: 1;
+      }
+      51.5625% {
+        opacity: 0;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+      98.4375% {
+        opacity: 0;
+        transform: scale(1.2060606061);
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes kenburns-2 {
+      48.4375% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+      51.5625% {
+        opacity: 1;
+      }
+      98.4375% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1);
+      }
+    }

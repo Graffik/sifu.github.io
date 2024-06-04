@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="description" content="">
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+<link rel="stylesheet" type="text/css" href="endura.css" />
+<link rel="stylesheet" type="text/css" href="responsive.css" />
+<link rel="shortcut icon" href="endura-icon.png" type="image/x-icon">
+
+</head>
+<body>
+
+<div><link rel="stylesheet" href="mobilenav.css">
+
+<div id="menuArea" class="burger fadeInLeft">
+
+<input type="checkbox" id="menuToggle"></input>
+
+<label for="menuToggle" class="menuOpen">
+<div class="open"></div>
+</label>
+
+<div class="menu menuEffects">
+<label for="menuToggle"></label>
+
+<div class="menuContent">
+<ul>
+<li><a href="/technology">Technology</a></li>
+	
+<li><button id="dropbut" onclick="prods()">Products +</button></li>
+<div id="prods">
+<div class="sub"><a href="/products-svr">&#8627; sVR</a></div>	
+<div class="sub"><a href="/products-evr">&#8627; eVR</a></div>
+<div class="sub"><a href="/products-ivr">&#8627; iVR</a></div>
+</div>
+
+<li><a href="/integration">Integration</a></li>
+<li><a href="/solutions">Solutions</a></li>
+
+<li><button id="dropbut" onclick="comp()">Company +</button></li>
+<div id="comp">
+<div class="sub"><a href="/leadership">&#8627; Leadership</a></div>
+<div class="sub"><a href="/news">&#8627; News & Info</a></div>
+<div class="sub"><a href="/careers">&#8627; Careers</a></div>
+<div class="sub"><a href="/contact-us">&#8627; Contact</a></div>
+</div>
+	
+<li><a href="/">Home</a></li>
+</ul>
+</div>
+
+</div> <!-- end of menuEffects -->
+</div> <!-- end of menuArea -->
+
+<script>
+function prods() {
+  var x = document.getElementById("prods");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function svr() {
+  var x = document.getElementById("svr");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function comp() {
+  var x = document.getElementById("comp");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script></div>
+
+<!-- TOP BLOCK STARTS HERE -->
+<div class="topwhitebkgrd fadeInDown">
+<div class="top">
+	
+<div class="mast"> <!-- mast starts here -->
+<script>
+// START AUTO COPYRIGHT INFO - doesn't work within footer - needs to be near top of page
+function updateCopyright(companyName) {
+currentDate = new Date();
+copyrightYear = currentDate.getFullYear();
+document.write("&#169; " + copyrightYear + " " + companyName + ".")
+}
+// END AUTO COPYRIGHT INFO
+</script>
+
+<div class="logobox">
+<a href="/"><img class="logo" src="images/endura-logo.png" alt="Endura Technologies" /></a>
+</div> <!-- logobox -->
+
+<div class="topnav">
+<div id="navigation">
+
+<div id="container">
+<ul>
+<li class="btn-holder"><a href="/technology"><button class="btn hover-border"><span>Technology</span></button></a></li>
+
+<li class="dropdown"><a href="#"><button class="btn hover-border"><span>Products</span></button></a>
+
+<div class="dropdown-content">
+<a href="/products-svr">sVR</a>
+<a href="/products-evr">eVR</a>
+<a href="/products-ivr">iVR</a>
+</div>
+
+</li>
+
+<li class="btn-holder"><a href="/integration"><button class="btn hover-border"><span>Integration</span></button></a></li>
+<li class="btn-holder"><a href="/solutions"><button class="btn hover-border"><span>Solutions</span></button></a></li>
+<li class="dropdown"><a href="#"><button class="btn hover-border"><span>Company</span></button></a>
+
+<div class="dropdown-company">
+<a href="/leadership">Leadership</a>
+<a href="/news">News & Info</a>
+<a href="/careers">Careers</a>
+<a href="/contact-us">Contact</a>
+</div>
+
+</li>
+</ul>
+</div>
+
+</div> <!-- end navigation -->
+</div> <!-- end topnav --></div> <!-- mast ends here -->
+	
+<div class="subcolumn fade-in-div">
+<h1>CHP2630/2635</h1>
+</div>
+
+</div> <!-- end top -->
+</div> <!-- end topwhitebkgrd -->
+<!-- TOP BLOCK ENDS HERE -->
+
+<div class="fade-in-div" style="margin: 10px 0 50px 0;"><hr></div>
+
+<div class="chptrips show-on-scroll">
+<div class="chptop">
+<ul>
+<li><b>General Description</b></li>
+<li>CHP2630 is a single-channel 10MHz four phase 12A DCDC buck converter.</li>
+<li>CHP2635 is a dual-channel dual phase 5A DCDC buck converter.</li>
+<li>This IC is designed as a stand-alone component without integrated passives, resulting in the smallest possible footprint.</li>
+<li>The Dynamic Voltage Control (DVC) supports adaptive adjustment of the output voltage depending on the load. The DVC can be controlled either via direct register writes through the communication interface (I<sup>2</sup>C or SPI) or via input pins.</li>
+<li>A remote sensing feature is included to provide high accuracy and to support various PCB routing schemes. </li>
+<li>Integrated protection features for increased system reliability.</li>
+</ul></div>
+</div>
+
+<div class="chptrips show-on-scroll">
+<div class="chpmiddle"><img src="images/chp-2630.jpg" alt="Endura CHP-2630" />
+<div style="text-align: center; font-size: 11pt; padding: 10px 0 40px 0;">152nm, 0.35u WLCSP ES Silicon Validated</div>
+<img src="images/unisoc5g.jpg" alt="Unisoc 5G Platform" />
+<div style="text-align: center; font-size: 11pt; padding: 10px 0;">Unisoc 5G Platform</div></div><div class="chpbottom">
+<ul>
+<li><b>Key Features</b></li>
+<li>Programmable Switching Frequency Up to 10MHz</li>
+<li>Input Voltage Range: 2.7V - 5.5V</li>
+<li>Programmable Output Voltage Range: 0.5V-3.3V</li>
+<li>Flat and high efficiency over wide load range, up to 92%</li>
+<li>Output Voltage Step Size 3.125mV</li>
+<li>Output Current capability:
+<ul style="margin-left: 40px;">
+<li style="padding-top: 10px;">CHP2630: 12A (Single buck)</li>
+<li>CHP2635: 6A*2 (Dual bucks)</li>
+</ul></li>
+<li>Fast DVC with Slew Rate: 250mV/us</li>
+<li>Control interface: I<sup>2</sup>C & SPI</li>
+<li>Automatic, hysteresis-less PFM/PWM transitions</li>
+<li>Remote sensing at point-of-load</li>
+<li>Power-Good output status report</li>
+<li>Programmable OCP, UVLO, Over-Temperature warning and protection</li>
+<li>Integrated OTP registers</li>
+<li>WLCSP-64,2.9x2.9mm, 0.35mm ball pitch</li>
+</ul>
+</div>
+</div>
+
+<div class="footslide show-on-scroll"><hr></div>
+
+<div class="footslide show-on-scroll">
+
+<div class="footmast">
+
+<div class="footlogobox">
+<a href="/"><img class="logo" src="images/endura-logo.png" alt="Endura Technologies Logo" /></a>
+</div> <!-- end logobox -->
+	
+<div class="footsocial"><span class="fineprint">San Diego, CA | Dublin, Ireland | <script type="text/javascript" language="JavaScript">updateCopyright('Endura Technologies');</script> | All rights reserved. Endura Technologies eVR<sup>&trade;</sup> is a trademark of Endura Technologies. | <a href="/privacy-page" class="hover-underline-animation">Privacy Page</a></span></div> <!-- end footsocial -->
+
+</div> <!-- mast ends here -->
+
+</div> <!-- end footslide -->
+
+<script>
+// START MOBILE NAV SCROLL DISABLE
+// Number of clicks on the trigger element initially set on 0
+let numOfClicks = 0;
+// Get trigger element 
+const trigger = document.getElementById("menuToggle");
+// Get body element
+const bodyEl = document.getElementsByTagName("body")[0];
+
+// Set onclick function to trigger element
+trigger.onclick = () => {
+    numOfClicks += 1;
+    // Check if number of clicks is an even value: 
+    // odd value - first click, even value - second click
+    const isNumOfClicksEven = numOfClicks % 2 === 0;
+    // On first click set body's overflow property to "auto", 
+    // On second click set body's overflow property to "hidden"
+    isNumOfClicksEven ? bodyEl.style.overflow = "auto" : bodyEl.style.overflow = "hidden";
+};
+// END MOBILE NAV SCROLL DISABLE
+</script>
+
+<script src="endura.js"></script>
+
+</body>
+</html>
